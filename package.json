@@ -1,0 +1,11 @@
+{
+  "name": "buycar",
+  "version": "1.0.0",
+  "description": "ads board fo cars",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "andreev.gs",
+  "license": "ISC"
+}

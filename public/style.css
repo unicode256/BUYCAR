@@ -1,0 +1,171 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+body {
+    height: 4000px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+
+.navbar, .navbar * {
+    /* border: 1px solid black; */
+}
+
+.navbar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background-color: rgba(73, 71, 71, 0.4);
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    padding: 0 24px;
+}
+
+.sticky_navbar {
+    height: 80px;
+    background: rgb(73, 71, 71);
+}
+
+li {
+    list-style-type: none;
+}
+
+.navbar img {
+    width: 103px;
+    height: 32px;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    /* position: relative; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.navbar > ul > li {
+    /* position: relative; */
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    margin-left: 47px;
+    display: flex;
+}
+
+.navbar .profile_select {
+    text-transform: none;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li img {
+    width: 14px;
+    height: 7px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.navbar ul .sell_button{
+    border: 1px solid rgba(255,255,255, 0.5);
+    padding: 10px 29px;
+    margin-left: 47px;
+}
+
+.navbar .profile_select img {
+    margin: -1px 0 0 0;
+}
+
+.navbar .navbar_avatar {
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    margin-right: 11px;
+    margin-left: 11px;
+    border-radius: 23px;
+}
+
+.submenu {
+    position: absolute;
+    background: #fff;
+    text-transform: none;
+    width: 240px;
+    flex-direction: column;
+    color: #828282;
+    top: 80px;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -ms-transform-origin: top center;
+    -o-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.submenu:hover {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.fu li:hover + .submenu {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+.submenu li {
+    width: 190px;
+    padding: 17px 0;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.navbar a:hover + .submenu {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.submenu li:first-child {
+    margin-top: 13px;
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+    margin-bottom: 13px;
+}
