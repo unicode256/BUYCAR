@@ -6,10 +6,15 @@ html, body {
 }
 
 body {
-    height: 4000px;
     font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    height: 1000px;
     background-color: rgb(230, 230, 230);
 }
+
+/* navbar */
 
 .navbar, .navbar * {
     /* border: 1px solid black; */
@@ -35,7 +40,7 @@ body {
 
 .sticky_navbar {
     height: 80px;
-    background: rgb(73, 71, 71);
+    background-color: rgb(73, 71, 71);
 }
 
 li {
@@ -47,12 +52,18 @@ li {
     height: 32px;
 }
 
-.navbar ul {
+.navbar > ul {
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
     display: flex;
+    height: 80px;
+}
+
+.navbar ul .selection {
+    height: 80px;
+    align-items: center;
 }
 
 .navbar > ul > li {
@@ -74,7 +85,7 @@ li {
     width: 14px;
     height: 7px;
     margin-left: 10px;
-    margin-top: 5px;
+    margin-top: -2px;
 }
 
 .navbar ul .sell_button{
@@ -99,16 +110,19 @@ li {
 .submenu {
     font-weight: 400;
     position: absolute;
-    background: #fff;
+    
     text-transform: none;
-    width: 240px;
-    flex-direction: column;
+    
     color: #828282;
     top: 80px;
     opacity: 0;
     visibility: hidden;
+    background: #fff;
+    width: 240px;
     display: flex;
+    flex-direction: column;
     z-index: 499;
+    line-height: 1.6em;
 
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
@@ -142,7 +156,7 @@ li {
     margin-bottom: 13px;
 }
 
-.navbar a:hover + .submenu {
+.navbar .selection:hover .submenu {
     opacity: 1;
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
@@ -151,3 +165,67 @@ li {
     transform: rotateX(0deg);
     visibility: visible;
 }
+
+/* navbar end*/
+
+/* footer */
+
+.footer * {
+    /* border: 1px solid black; */
+}
+
+.footer {
+    background-color: rgb(73, 71, 71);
+    color: rgb(182, 181, 181);
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container {
+    width: 1032px;
+}
+
+.footer .container .footer_links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 90px 0;
+}
+
+.footer div a:first-child {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.footer div a {
+    margin-bottom: 18px;
+}
+
+.footer div a:last-child {
+    margin-bottom: 0;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.footer .copyright img {
+    width: 153px;
+    height: 48px;
+}
+
+.footer .copyright span {
+    margin-left: 199px;
+}
+
+/* footer end*/
