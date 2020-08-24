@@ -1,7 +1,7 @@
 $(window).on('load', () => {
-    setTimeout(() => {
+    // setTimeout(() => {
         $('.preloader')[0].classList.toggle('loaded');
-    }, 1000);
+    // }, 1000);
 });
 
 $(window).on('scroll', () => {
@@ -10,5 +10,9 @@ $(window).on('scroll', () => {
 });
 
 $('.sidebar_switcher').on('click', () => {
-    $('.menu_toggle')[0].classList.toggle('active');
-})
+    $('.navbar')[0].classList.toggle('sidebar_nav_active');
+});
+
+$('.bg').on('click', () => {
+    $('.navbar')[0].classList.toggle('sidebar_nav_active');
+});
