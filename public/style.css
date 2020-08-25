@@ -73,7 +73,6 @@ body {
 /* background for sidebar */
 
 .bg {
-    border: 1px solid black;
     display: none;
     opacity: 0;
     visibility: hidden;
@@ -280,20 +279,25 @@ li {
   transform-origin: 0% 100%;
 }
 
+.sidebar_nav, .sidebar_nav * {
+    /* border: 1px solid black; */
+}
+
 .sidebar_nav {
     display: none;
     margin: 0;
     padding: 0;
     width: 270px;
-    height: 100%;
+    /* height: 100%; */
     background-color: #fff;
     position: fixed;
     top: 80px;
     left: 0;
+    bottom: 0;
     font-weight: 500;
-    padding-left: 30px;
     z-index: 496;
     -webkit-font-smoothing: antialiased;
+    overflow: scroll;
     /* to stop flickering of text in safari */
     
     transform-origin: 0% 0%;
@@ -302,14 +306,23 @@ li {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-.sidebar_nav ul {
+.sidebar_nav > ul {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar_nav li {
-    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 24px;
+}
+
+.sidebar_nav li img {
+    width: 10px;
 }
 
 .sidebar_nav_active .menu_toggle span {
@@ -334,7 +347,94 @@ li {
 .sidebar_nav_active ~ .bg {
     visibility: visible;
     opacity: 1;
-    /* transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); */
+}
+
+.sidebar_nav .account_menu * {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+.sidebar_nav .account_menu {
+    color: #fff;
+}
+
+.sidebar_nav .account_menu .account_info {
+    background-color: #FCC12A;
+    padding: 20px 24px;
+}
+
+.sidebar_nav .account_menu .account_info div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar_nav .account_menu .account_info > div {
+    padding-top: 20px;
+    /* border: 1px solid black; */
+}
+
+.sidebar_nav .account_menu .account_info > img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    display: block;
+}
+
+.sidebar_nav .account_menu .account_info div div {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar_nav .account_menu .account_info div div img {
+    width: 12px;
+}
+
+.sidebar_nav .account_menu .account_info div div p {
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar_nav .account_menu .account_info div div p:first-child {
+    font-weight: 500;
+}
+
+.sidebar_nav .account_menu .account_info div div p:last-child {
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+.sidebar_nav .account_menu .account_menu_items {
+    font-weight: 500;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.sidebar_nav .account_menu .account_menu_items {
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.sidebar_nav .account_menu .account_menu_items ul li {
+    padding: 15px 48px;
+    margin-bottom: 6px;
+}
+
+.sidebar_nav .account_menu .account_menu_items ul li:first-child {
+    margin-top: 20px;
+}
+
+.sidebar_nav .account_menu .account_menu_items ul > a {
+    display: flex;
+    justify-content: center;
+    margin: 20px 24px;
+    padding: 15px 0px;
+    text-align: center;
+    font-weight: 300;
+    background-color: #FCC12A;
+    color: #fff;
 }
 
 /* navbar for mobile end*/
