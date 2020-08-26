@@ -82,8 +82,6 @@ body {
     right: 0;
     bottom: 0;
     z-index: 490;
-    /* background-color: rgb(0, 0, 0, 0.3);
-    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); */
 }
 
 /* background for sidebar end */
@@ -297,7 +295,8 @@ li {
     font-weight: 500;
     z-index: 496;
     -webkit-font-smoothing: antialiased;
-    overflow: scroll;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     /* to stop flickering of text in safari */
     
     transform-origin: 0% 0%;
@@ -432,7 +431,7 @@ li {
     margin: 20px 24px;
     padding: 15px 0px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     background-color: #FCC12A;
     color: #fff;
 }
