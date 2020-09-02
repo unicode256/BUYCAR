@@ -305,6 +305,10 @@ li {
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
+.navbar .menu_toggle .sidebar_nav {
+    cursor: pointer;
+}
+
 .sidebar_nav > ul {
     margin: 0;
     padding: 0;
@@ -489,6 +493,7 @@ li {
 .sidebar_nav .sidebar_submenu ul li {
     padding: 10px 48px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .sidebar_nav .sidebar_submenu ul #two_lines_item {
