@@ -9,8 +9,20 @@ $(window).on('scroll', () => {
     navbar.classList.toggle('sticky_navbar', window.scrollY > 0);
 });
 
-$('.sidebar_switcher').on('click', () => {
+$('.account_info').on('click', () => {
+    $('.account_menu')[0].classList.toggle('account_menu_open');
+});
+
+$(document).on('click', '.sidebar_switcher', () => {
     $('.navbar')[0].classList.toggle('sidebar_nav_active');
+});
+
+$(document).on('click', '.menu_item', (event) => {
+    console.log(event.target.nodeName);
+    if(event.target.nodeName != 'LI'){
+        return;
+    }
+    event.target.classList.toggle('submenu_open');
 });
 
 $('.bg').on('click', () => {

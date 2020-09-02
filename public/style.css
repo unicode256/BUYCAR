@@ -308,6 +308,7 @@ li {
 .sidebar_nav > ul {
     margin: 0;
     padding: 0;
+    background-color: #fff;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
@@ -318,6 +319,18 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: 15px 24px;
+}
+
+.sidebar_nav ul .menu_item {
+    transition: all ease-in-out 0.2s;
+}
+
+.sidebar_nav li:first-child {
+    margin-top: 20px;
+}
+
+.sidebar_nav li:last-child {
+    margin-bottom: 20px;
 }
 
 .sidebar_nav li img {
@@ -356,6 +369,8 @@ li {
 
 .sidebar_nav .account_menu {
     color: #fff;
+    /* height: 0; */
+    /* overflow: hidden; */
 }
 
 .sidebar_nav .account_menu .account_info {
@@ -406,14 +421,28 @@ li {
 }
 
 .sidebar_nav .account_menu .account_menu_items {
+    padding-top: 0;
     font-weight: 500;
     background-color: #fff;
     color: #000;
     text-transform: uppercase;
+    max-height: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.2s;
 }
 
-.sidebar_nav .account_menu .account_menu_items {
-    border-bottom: 1px solid rgb(227, 227, 227);
+.sidebar_nav .account_menu .account_info div img {
+    transform: rotate(0deg);
+    transition: transform ease-in-out 0.2s;
+}
+
+.sidebar_nav .account_menu_open .account_info div img {
+    transform: rotate(180deg);
+    transition: transform ease-in-out 0.2s;
+}
+
+.sidebar_nav .account_menu_open .account_menu_items {
+    max-height: 434px;
 }
 
 .sidebar_nav .account_menu .account_menu_items ul li {
@@ -428,12 +457,92 @@ li {
 .sidebar_nav .account_menu .account_menu_items ul > a {
     display: flex;
     justify-content: center;
-    margin: 20px 24px;
+    margin: 20px 24px 0 24px;
     padding: 15px 0px;
     text-align: center;
     font-weight: 400;
     background-color: #FCC12A;
     color: #fff;
+}
+
+.sidebar_nav .account_menu .account_menu_items ul li:last-child {
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.sidebar_nav .sidebar_submenu ul, .sidebar_nav .sidebar_submenu ul li {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar_nav .sidebar_submenu {
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 400;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 0.2s;
+}
+
+.sidebar_nav .sidebar_submenu ul li {
+    padding: 10px 48px;
+    margin-bottom: 5px;
+}
+
+.sidebar_nav .sidebar_submenu ul #two_lines_item {
+    line-height: 1.5em;
+}
+
+.sidebar_nav .sidebar_submenu ul li:first-child {
+    margin-top: 10px;
+}
+
+.sidebar_nav .sidebar_submenu ul li:last-child {
+    margin-bottom: 15px;
+}
+
+.sidebar_nav ul li .arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar_nav ul li .arrow img {
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.sidebar_nav ul li .arrow img:first-child {
+    position: relative;
+    opacity: 1;
+    transform: translate(100%, 0);
+    transition: opacity ease-in-out 0.2s;
+}
+
+.sidebar_nav ul .submenu_open {
+    background-color: #FCC12A;
+    color: #fff;
+    transition: all ease-in-out 0.2s;
+}
+
+.sidebar_nav ul .submenu_open:nth-child(1) + .sidebar_submenu, .sidebar_nav ul .submenu_open:nth-child(3) + .sidebar_submenu {
+    max-height: 143px;
+}
+
+.sidebar_nav ul .submenu_open:nth-child(5) + .sidebar_submenu {
+    max-height: 251px;
+}
+
+.sidebar_nav ul .submenu_open .arrow img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.sidebar_nav ul .submenu_open .arrow img:first-child {
+    opacity: 0;
 }
 
 /* navbar for mobile end*/
