@@ -20,7 +20,7 @@ input {
 .content .header_wrapper {
     text-transform: uppercase;
     color: #fff;
-    padding: 240px 180px;
+    padding: 240px 0;
     background-image: url('img/heading.jpg');
     background-size: cover;
     background-position: left;
@@ -31,12 +31,15 @@ input {
     font-size: 59px;
     font-weight: 300;
     margin-bottom: 100px;
+    width: 1032px;
+    margin: 0 auto 100px auto;
 }
 
 .content .header_wrapper h2 {
     font-size: 31px;
     font-weight: 300;
-    margin-bottom: 50px;
+    width: 1032px;
+    margin: 0 auto 50px auto;
 }
 
 /* heading end */
