@@ -23,6 +23,7 @@ input {
     padding: 240px 180px;
     background-image: url('img/heading.jpg');
     background-size: cover;
+    background-position: left;
     text-shadow: 2px 3px 4px rgba(0,0,0,0.3);
 }
 
@@ -55,11 +56,26 @@ input {
     margin-top: -100px;
 }
 
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+}
+
 .search_parameters form {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     color: #78797C;
+    border: none;
+}
+
+.search_parameters form > div {
+    box-sizing: border-box;
 }
 
 .search_parameters form > div img {

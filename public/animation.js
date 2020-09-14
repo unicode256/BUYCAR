@@ -9,12 +9,12 @@ $(window).on('scroll', () => {
     navbar.classList.toggle('sticky_navbar', window.scrollY > 0);
 });
 
-$('.account_info').on('click', () => {
-    $('.account_menu')[0].classList.toggle('account_menu_open');
-});
-
 $(document).on('click', '.sidebar_switcher', () => {
     $('.navbar')[0].classList.toggle('sidebar_nav_active');
+});
+
+$('.account_info').on('click', () => {
+    $('.account_menu')[0].classList.toggle('account_menu_open');
 });
 
 $(document).on('click', '.menu_item', (event) => {
