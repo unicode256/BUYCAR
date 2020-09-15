@@ -154,11 +154,10 @@ li {
     color: #fff;
 }
 
-.navbar li img {
-    width: 14px;
-    height: 7px;
+.navbar > ul > li img {
+    width: 11px;
+    height: 5px;
     margin-left: 10px;
-    margin-top: -2px;
 }
 
 .navbar ul .sell_button{
