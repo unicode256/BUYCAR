@@ -9,7 +9,7 @@ $(window).on('scroll', () => {
     navbar.classList.toggle('sticky_navbar', window.scrollY > 0);
 });
 
-$(document).on('click', '.sidebar_switcher', () => {
+$('.sidebar_switcher').on('click', () => {
     $('.navbar')[0].classList.toggle('sidebar_nav_active');
 });
 
@@ -17,7 +17,7 @@ $('.account_info').on('click', () => {
     $('.account_menu')[0].classList.toggle('account_menu_open');
 });
 
-$(document).on('click', '.menu_item', (event) => {
+$('.menu_item').on('click', (event) => {
     console.log(event.target.nodeName);
     if(event.target.nodeName != 'LI'){
         return;

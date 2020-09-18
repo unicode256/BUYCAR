@@ -339,3 +339,23 @@ input {
     width: 142px;
     margin: 60px auto 0 auto;
 }
+
+
+@media screen and (max-width: 1032px) {
+    .content .header_wrapper h1, .content .header_wrapper h2, .main_content {
+        width: 300px;
+        padding: 0;
+    }
+
+    .content .header_wrapper h1 {
+        font-size: 20px;
+    }
+
+    .main_content .marks {
+        padding: 0;
+    }
+
+    .search_parameters form {
+        flex-direction: column;
+    }
+}
