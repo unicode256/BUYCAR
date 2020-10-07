@@ -104,9 +104,8 @@ input {
     border: none;
     color: #fff;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
-    /* text-align: center; */
 }
 
 .search_parameters form > div {
@@ -144,10 +143,82 @@ input {
     transition: all ease-in-out 0.2s;
 }
 
+/* marks dimentions */
+
+.main_content .marks .logos a {
+    width: 39px;
+    height: 39px;
+}
+
+#bmw img, #mercedes img, #volkswagen img, #ford img {
+    width: 39px;
+    height: 39px;
+}
+
+#audi img {
+    width: 39px;
+    height: 22px;
+}
+
+#kia img {
+    width: 39px;
+    height: 22px;
+}
+
+#lada img {
+    width: 39px;
+    height: 17px;
+}
+
+#hyundai img {
+    width: 39px;
+    height: 20px;
+}
+
+#renault img {
+    width: 31px;
+    height: 39px;
+}
+
+#chevrolet img {
+    width: 39px;
+    height: 11px;
+}
+
+#geely img {
+    width: 39px;
+    height: 19px;
+}
+
+#acura img {
+    width: 39px;
+    height: 37px;
+}
+
+#mazda img {
+    width: 39px;
+    height: 31px;
+}
+
+#porsche img {
+    width: 35px;
+    height: 39px;
+}
+
+#toyota img {
+    width: 39px;
+    height: 26px;
+}
+
+#volvo img {
+    width: 39px;
+    height: 5px;
+}
+
+/* marks dimentions end */
 
 .main_content .marks, .main_content .marks * {
     /* border: 1px solid black; */
-
 }
 
 .main_content .marks {
@@ -400,10 +471,6 @@ input {
         padding: 60px 0;
     }
 
-    .main_content .marks * {
-        border: 1px solid black;
-    }
-
     .search_parameters, .search_parameters * {
         /* border: 1px solid black; */
     }
@@ -446,14 +513,105 @@ input {
 
 }
 
-/* @media screen and (max-width: 340px) {
-    .content .header_wrapper h1 {
-        font-size: 18px;
-        margin-bottom: 30px;
+@media screen and (max-width: 700px) {
+
+    /* marks dimentions */
+
+    .main_content .marks * {
+        /* border: 1px solid black; */
     }
 
-    .content .header_wrapper h2 {
-        font-size: 16px;
-        margin-bottom: 20px;
+    .main_content .marks .logos a {
+        width: 48%;
+        height: 110px;
+        margin-bottom: 50px;
+        position: relative;
     }
-} */
+
+    .main_content .marks .logos a .tooltip {
+        position: absolute;
+        bottom: 0;
+        max-width: 150px;
+        font-size: 16px;
+    }
+
+    .main_content .marks .logos div:last-child {
+        display: none;
+        /* margin-top: 0; */
+    }
+
+    #bmw img, #mercedes img, #volkswagen img, #ford img {
+        width: 58px;
+        height: auto;
+    }
+
+    #audi img {
+        width: 58px;
+        height: auto;
+    }
+
+    #kia img {
+        width: 58px;
+        height: auto;
+    }
+
+    #lada img {
+        width: 58px;
+        height: auto;
+    }
+
+    #hyundai img {
+        width: 58px;
+        height: auto;
+    }
+
+    #renault img {
+        width: 50px;
+        height: auto;
+    }
+
+    #chevrolet img {
+        width: 58px;
+        height: auto;
+    }
+
+    #geely img {
+        width: 58px;
+        height: auto;
+    }
+
+    #acura img {
+        width: 58px;
+        height: auto;
+    }
+
+    #mazda img {
+        width: 58px;
+        height: auto;
+    }
+
+    #porsche img {
+        width: 54px;
+        height: auto;
+    }
+
+    #toyota img {
+        width: 58px;
+        height: auto;
+    }
+
+    #volvo img {
+        width: 58px;
+        height: auto;
+    }
+
+    #toyota, #volvo, #renault, #hyundai {
+        margin-bottom: 0;
+    }
+
+    /* marks dimentions end */
+
+    .main_content .marks .logos div {
+        flex-wrap: wrap;
+    }
+}
