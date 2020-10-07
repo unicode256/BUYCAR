@@ -428,6 +428,23 @@ input {
 }
 
 
+@media screen and (max-width: 1090px) {
+
+    .main_content .ads {
+        width: 681px;
+        margin: 0 auto;
+    }
+
+    .main_content .ads .ad {
+        margin-bottom: 30px;
+    }
+
+    .main_content .ads .ad:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
 @media screen and (max-width: 1032px) {
     .content .header_wrapper h1, .content .header_wrapper h2, .main_content, .content .header_wrapper {
         width: 100%;
@@ -613,5 +630,20 @@ input {
 
     .main_content .marks .logos div {
         flex-wrap: wrap;
+    }
+
+    /* ads  */
+
+    .main_content .ads {
+        width: 330px;
+        margin: 0 auto;
+    }
+
+    /* ads end */
+}
+
+@media screen and (max-width: 330px) {
+    .main_content .ads .ad, .main_content .ads {
+        width: 100%;
     }
 }
