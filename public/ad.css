@@ -46,12 +46,64 @@ input {
 /* heading end */
 
 .content .main_content, .content .main_content * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .content .main_content {
     width: 1032px;
     margin: auto;
+    padding: 90px 0 0 0;
+}
+
+.content .main_content h3:first-child {
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.content .main_content h3:nth-child(2) {
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 23px;
+    color: #fff;
+    background-color: #FCC12A;
+    margin-bottom: 35px;
+}
+
+.content .main_content .ad_content {
+    width: 577px;
+}
+
+.content .main_content .ad_content .meta {
+    font-size: 12px;
+    color: #78797C;
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.content .main_content .ad_content .meta span {
+    margin-right: 18px;
+}
+
+.content .main_content .ad_content .meta span:nth-child(2) {
+    display: flex;
+}
+
+.content .main_content .ad_content .meta span:nth-child(2) img {
+    margin-right: 4px;
+    margin-top: 1px;
+}
+
+.content .main_content .ad_content .description {
+    margin-bottom: 35px;
+    line-height: 28px;
+}
+
+.content .main_content .gallery {
+    margin-bottom: 35px;
 }
 
 .content .main_content .gallery .active_photo img {
@@ -62,4 +114,40 @@ input {
 .content .main_content .gallery .photos img {
     width: 96px;
     height: auto;
+}
+
+.content .main_content .ad_content .options {
+    font-size: 16px;
+    padding-bottom: 36px;
+}
+
+.content .main_content .ad_content .options .option {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #E5E5E5;
+}
+
+.content .main_content .ad_content .options .option .option_category {
+    font-weight: 500;
+}
+
+.content .main_content .ad_content .options .option .option_items {
+    width: 60%;
+}
+
+.content .main_content .ad_content .options .option .option_items .option_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.content .main_content .ad_content .options .option .option_items .option_item:last-child {
+    margin-bottom: 0;
+}
+
+.content .main_content .ad_content .options .option .option_items .option_item img {
+    width: 13px;
+    height: auto;
+    margin-right: 13px;
 }
