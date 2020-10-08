@@ -1,0 +1,65 @@
+.content .header_wrapper, .content .header_wrapper * {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+.content {
+    background-color: #fff;
+    width: 100%;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+/* heading */
+
+.content .header_wrapper {
+    color: #fff;
+    padding: 280px 0;
+    background-image: url('img/DRIVECLUB™_20191024204336.jpg');
+    background-size: cover;
+    background-position: left;
+    text-align: center;
+    text-shadow: 2px 3px 4px rgba(0,0,0,0.3);
+}
+
+.content .header_wrapper h1 {
+    text-transform: uppercase;
+    font-size: 47px;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.content .header_wrapper h2 {
+    font-size: 30px;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* heading end */
+
+.content .main_content, .content .main_content * {
+    border: 1px solid black;
+}
+
+.content .main_content {
+    width: 1032px;
+    margin: auto;
+}
+
+.content .main_content .gallery .active_photo img {
+    width: 577px;
+    height: auto;
+}
+
+.content .main_content .gallery .photos img {
+    width: 96px;
+    height: auto;
+}
