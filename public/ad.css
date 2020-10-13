@@ -84,7 +84,7 @@ input {
     margin-bottom: 35px;
 }
 
-.content .main_content .ad_content .meta span {
+.content .main_content .ad_content .meta > span {
     margin-right: 18px;
 }
 
@@ -150,4 +150,40 @@ input {
     width: 13px;
     height: auto;
     margin-right: 13px;
+}
+
+.main_content .other_info * {
+    border: 1px solid black;
+}
+
+.main_content .other_info {
+    width: 370px;
+    font-size: 16px;
+}
+
+.main_content .other_info .car_info {
+    font-weight: 500;
+    color: #828282;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 45px;
+}
+
+.main_content .other_info .car_info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_content .other_info .car_info > div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_content .other_info .car_info img {
+    width: 20px;
+    height: 20px;
+}
+
+.main_content .other_info .car_info > span:first-child, .main_content .other_info .car_info > span:nth-child(2) {
+     
 }
