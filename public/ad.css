@@ -153,12 +153,13 @@ input {
 }
 
 .main_content .other_info * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .main_content .other_info {
     width: 370px;
     font-size: 16px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.15);
 }
 
 .main_content .other_info .car_info {
@@ -182,6 +183,41 @@ input {
 .main_content .other_info .car_info img {
     width: 20px;
     height: 20px;
+}
+
+.main_content .other_info .car_info > div > span {
+    margin-bottom: 10px;
+}
+
+.main_content .other_info .car_info > div > span:nth-child(3) {
+    margin-bottom: 35px;
+}
+
+.main_content .other_info .car_info > div > div {
+    margin-bottom: 20px;
+}
+
+.main_content .other_info .car_info > div > div:last-child {
+    margin-bottom: 0;
+}
+
+.main_content .other_info .car_info > div:first-child {
+    padding-bottom: 41px;
+}
+
+.main_content .other_info .car_info > div:nth-child(2) {
+    margin-bottom: 41px;
+    padding-top: 41px;
+    color: #FCC12A;
+    border-top: 1px solid #E5E5E5;
+}
+
+.main_content .other_info .car_info > div > div img {
+    margin-right: 20px;
+}
+
+.main_content .other_info .car_info > span:nth-child(3) {
+    margin-bottom: 20px;
 }
 
 .main_content .other_info .car_info > span:first-child, .main_content .other_info .car_info > span:nth-child(2) {
