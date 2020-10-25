@@ -35,7 +35,7 @@ var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
 
-var maxMoved = 0;
+var maxMoved = 192;
 var movedLeft, movedRight;
 
 $(document).ready(function() {
