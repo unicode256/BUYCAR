@@ -35,8 +35,9 @@ var slideInterval = 3000;
 var navBtnId = 0;
 var translateWidth = 0;
 
-var maxMoved = 192;
-var movedLeft, movedRight;
+var maxMoved = ((slideCount - 6) / 2) * 96;
+var movedLeft = 0;
+var movedRight = slideCount * 96;
 
 $(document).ready(function() {
 
@@ -73,14 +74,21 @@ function moveTapeRight(prevSlide) {
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
         });
+        movedRight = 0;
+        movedLeft = slideCount * 96;
     } else {
-        translateWidth = -$('.selector_photo').width() * (prevSlide - 3);
+        translateWidth = -$('.selector_photo').width() * (slideNow - 1);
         $('.photos_selector').css({
             'transform': 'translate(' + translateWidth + 'px, 0)',
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
         });
+        movedRight = (translateWidth * (-1));
+        movedLeft = (slideCount * 96) - movedRight;
     }
+    console.log(translateWidth);
+    console.log('movedLeft = ' + movedLeft);
+    console.log('movedRight = ' + movedRight);
 }
 
 function moveTapeLeft(prevSlide) {
@@ -88,6 +96,8 @@ function moveTapeLeft(prevSlide) {
     if (prevSlide == 1 || prevSlide == slideCount || prevSlide <= 0 || prevSlide > slideCount) {
         $('.photos_selector').css('transform', 'translate(0, 0)');
         console.log(333);
+        movedLeft = 0;
+        movedRight = slideCount * 96;
     } else {
         translateWidth = -$('.selector_photo').width() * (prevSlide - 1);
         $('.photos_selector').css({
@@ -95,9 +105,12 @@ function moveTapeLeft(prevSlide) {
             '-webkit-transform': 'translate(' + translateWidth + 'px, 0)',
             '-ms-transform': 'translate(' + translateWidth + 'px, 0)',
         });
+        movedLeft = (translateWidth * (-1));
+        movedRight = (slideCount * 96) - movedLeft;
     }
     console.log(translateWidth);
-
+    console.log('movedLeft = ' + movedLeft);
+    console.log('movedRight = ' + movedRight);
 }
 
 function nextSlide() {
@@ -120,7 +133,9 @@ function nextSlide() {
         slideNow++;
 		$('.selector_photo.s' + slideNow).addClass('active');
     }
-    moveTapeLeft(prevSlide);
+    if(movedLeft <= maxMoved || prevSlide == slideCount){
+        moveTapeLeft(prevSlide);
+    }
 }
 
 function prevSlide() {
