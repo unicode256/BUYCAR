@@ -6,6 +6,18 @@
     /* border: 1px solid black; */
 }
 
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+h1, h2, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     height: 80px;
     background-color: rgb(73, 71, 71);
@@ -20,6 +32,7 @@
 .main_content h1, .main_content p {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .main_content h1 {
@@ -83,6 +96,7 @@
 }
 
 .main_content .ads .ad .car_info h4 {
+    margin: 0;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
@@ -123,4 +137,152 @@
 .main_content .ads_section .all_interesting_ads_button {
     width: 142px;
     margin: 60px auto 0 auto;
+}
+
+.main_content .search_parameters {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.main_content .search_parameters form * {
+    /* border: 1px solid black; */
+}
+
+.main_content .search_parameters form div:last-child div:last-child, .main_content .search_parameters form div:last-child div:last-child * {
+    /* border: 1px solid black; */
+}
+
+.main_content .search_parameters form {
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);
+}
+
+
+.search_parameters form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #78797C;
+    border: none;
+    padding: 51px 35px 35px 35px;
+}
+
+.search_parameters form h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.search_parameters form > .search_parameter {
+    box-sizing: border-box;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.search_parameters form > .search_parameter:nth-child(4) {
+    margin-bottom: 56px;
+}
+
+.search_parameters form > .search_parameter img {
+    width: 14px;
+    height: 7px;
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.search_parameters form > .search_parameter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    position: relative;
+}
+
+.search_parameters form > .search_parameter input {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.search_parameters form > .search_parameter input:focus + span {
+    color: #fff;
+}
+
+.search_parameters form > .search_parameter input:focus ~ img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.slider_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.slider_container .slider {
+    width: 100%;
+    height: 4px;
+    background-color: #CFCFCF;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 52px;
+}
+
+.slider_container .slider span {
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    height: 12px;
+    background-color: #FCC12A;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.slider_container > div:last-child {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider_container div:last-child input:first-child {
+    text-align: right;
+}
+
+.slider_container div:last-child input {
+    width: 58px;
+    font-size: 16px;
+}
+
+.slider_container > div:last-child > div:last-child {
+    width: 136px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
