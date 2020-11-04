@@ -235,6 +235,10 @@ h1, h2, h4, p {
     transition: all ease-in-out 0.2s;
 }
 
+.slider_container, .slider_container * {
+    /* border: 1px solid black; */
+}
+
 .slider_container {
     width: 100%;
     display: flex;
@@ -285,4 +289,18 @@ h1, h2, h4, p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.slider_container .slider .ui-slider-range {
+    height: 4px;
+    background-color: #FCC12A;
+    position: absolute;
+}
+
+.slider_container .slider .ui-slider-handle {
+    margin-left: -6px;
+}
+
+.slider_container .slider .ui-slider-handle:focus {
+    outline: none;
 }

@@ -173,6 +173,49 @@ function prevSlide() {
     }
     if((movedRight < maxMoved || prevSlide == 1) && prevSlide != slideCount){
         moveTapeRight(prevSlide);
-    }
-    
+    }   
 }
+
+$(".slider").slider({
+    min: 0,
+    max: 300000,
+    values: [0, 300000],
+    range: true,
+    animate: "fast",
+    slide : function(event, ui) {    
+        $("#slider_from").val(ui.values[0]);   
+        $("#slider_to").val(ui.values[1]);  
+    }    
+});
+$("#slider_from").val($(".slider").slider("values", 0));
+$("#slider_to").val($(".slider").slider("values", 1));
+
+$(document).focusout(function() {
+    var input_left = $("#slider_from").val().replace(/[^0-9]/g, ''),    
+    opt_left = $(".slider").slider("option", "min"),
+    where_right = $(".slider").slider("values", 1),
+    input_right = $("#slider_to").val().replace(/[^0-9]/g, ''),    
+    opt_right = $(".slider").slider("option", "max"),
+    where_left = $(".slider").slider("values", 0); 
+    if (input_left > where_right) { 
+        input_left = where_right; 
+    }
+    if (input_left < opt_left) {
+        input_left = opt_left; 
+    }
+    if (input_left == "") {
+    input_left = 0;    
+    }        
+    if (input_right < where_left) { 
+        input_right = where_left; 
+    }
+    if (input_right > opt_right) {
+        input_right = opt_right; 
+    }
+    if (input_right == "") {
+        input_right = 0;    
+    }    
+    $("#slider_from").val(input_left); 
+    $("#slider_to").val(input_right); 
+    $(".slider").slider( "values", [ input_left, input_right ]);
+})
