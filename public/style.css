@@ -84,6 +84,10 @@ body {
     z-index: 490;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* background for sidebar end */
 
 /* navbar */
