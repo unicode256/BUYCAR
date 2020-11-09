@@ -107,12 +107,12 @@ h1, h2, h4, p {
 .main_content .ads .ad .car_info h4 a {
     color: #000;
     cursor: pointer;
-    transition: color linear 0.2s;
+    transition: color 0.3s;
 }
 
 .main_content .ads .ad .car_info h4 a:hover {
     color: #FCC12A;
-    transition: color linear 0.2s;
+    transition: color 0.2s;
 }
 
 .main_content .ads .ad .car_info h4:nth-child(2) {
@@ -182,24 +182,24 @@ h1, h2, h4, p {
     margin-bottom: 55px;
 }
 
-.search_parameters form > .search_parameter {
+.search_parameters form .search_parameter {
     box-sizing: border-box;
     margin-bottom: 28px;
     border-bottom: 1px solid #CFCFCF;
 }
 
-.search_parameters form > .search_parameter:nth-child(4) {
+.search_parameters form .search_parameter:nth-child(4) {
     margin-bottom: 56px;
 }
 
-.search_parameters form > .search_parameter img {
+.search_parameters form .search_parameter img {
     width: 14px;
     height: 7px;
     transform: rotate(0deg);
     transition: all ease-in-out 0.2s;
 }
 
-.search_parameters form > .search_parameter {
+.search_parameters form .search_parameter {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -212,7 +212,7 @@ h1, h2, h4, p {
     position: relative;
 }
 
-.search_parameters form > .search_parameter input {
+.search_parameters form .search_parameter input {
     width: 100%;
     position: absolute;
     top: 0;
@@ -226,13 +226,45 @@ h1, h2, h4, p {
     box-sizing: border-box;
 }
 
-.search_parameters form > .search_parameter input:focus + span {
+.search_parameters form .search_parameter input:focus + span {
     color: #fff;
 }
 
-.search_parameters form > .search_parameter input:focus ~ img {
+.search_parameters form .search_parameter input:focus ~ img {
     transform: rotate(180deg);
     transition: all ease-in-out 0.2s;
+}
+
+.search_parameters form .twin_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.search_parameters form .twin_input .search_parameter {
+    width: 112px;
+}
+
+.search_parameters form .all_parameters {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FCC12A;
+    display: block;
+    margin-top: 17px;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+
+.search_parameters form input[type="submit"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    background-color: #FCC12A;
+    cursor: pointer;
 }
 
 .slider_container, .slider_container * {
@@ -246,6 +278,7 @@ h1, h2, h4, p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
+    margin-bottom: 28px;
 }
 
 .slider_container .slider {

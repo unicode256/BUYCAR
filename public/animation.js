@@ -183,12 +183,12 @@ $(".slider").slider({
     range: true,
     animate: "fast",
     slide : function(event, ui) {    
-        $("#slider_from").val(ui.values[0]);   
-        $("#slider_to").val(ui.values[1]);  
+        $("#slider_from").val(String(ui.values[0]).replace(/(\d)(?=(\d{3})+$)/g, '$1 '));   
+        $("#slider_to").val(String(ui.values[1]).replace(/(\d)(?=(\d{3})+$)/g, '$1 '));  
     }    
 });
-$("#slider_from").val($(".slider").slider("values", 0));
-$("#slider_to").val($(".slider").slider("values", 1));
+$("#slider_from").val(String($(".slider").slider("values", 0)).replace(/(\d)(?=(\d{3})+$)/g, '$1 '));
+$("#slider_to").val(String($(".slider").slider("values", 1)).replace(/(\d)(?=(\d{3})+$)/g, '$1 '));
 
 $(document).focusout(function() {
     var input_left = $("#slider_from").val().replace(/[^0-9]/g, ''),    
@@ -214,8 +214,9 @@ $(document).focusout(function() {
     }
     if (input_right == "") {
         input_right = 0;    
-    }    
-    $("#slider_from").val(input_left); 
-    $("#slider_to").val(input_right); 
+    }
+    console.log(input_left);
+    $("#slider_from").val(String(input_left).replace(/(\d)(?=(\d{3})+$)/g, '$1 ')); 
+    $("#slider_to").val(String(input_right).replace(/(\d)(?=(\d{3})+$)/g, '$1 ')); 
     $(".slider").slider( "values", [ input_left, input_right ]);
 })

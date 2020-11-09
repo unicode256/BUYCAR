@@ -395,12 +395,12 @@ input {
 .main_content .ads .ad .car_info h4 a {
     color: #000;
     cursor: pointer;
-    transition: color linear 0.2s;
+    transition: color 0.3s;
 }
 
 .main_content .ads .ad .car_info h4 a:hover {
     color: #FCC12A;
-    transition: color linear 0.2s;
+    transition: color 0.2s;
 }
 
 .main_content .ads .ad .car_info h4:nth-child(2) {
