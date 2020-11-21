@@ -18,28 +18,45 @@ input {
 /* heading */
 
 .content .header_wrapper {
+    z-index: 0;
+    position: relative;
     text-transform: uppercase;
     color: #fff;
     padding: 240px 0;
-    background-image: url('img/heading.jpg');
+    background-color: #78797C;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APxU8Of8HIP7ZHgf4Z3Phue38D/ETxWlvoenaT408b+A9Ntb3TYtPudSfUbq5tfDWt6dZ63qOq2E+nWRutUtZTA2kR3Ui3V7qF9dP9HHiXNqOGlTjVjUr2hGnXrOUuRR5rucIezdWUlZOTnF+63rKTZ+e0PDjhPEZhGtjKGMhgk6lSphMDVpU5VZT9mlGNXEUsQqMYv2kly053clFRUYxS8UuP8Ag4j/AOCj08888fxisLFJppJUsrP4M/AB7SzSR2dbW1bUPhlf37W1uCIoGvr69vDEim5u7mYvM/mvPc9lq8fVTerUKiUE3q1FOg2op6RTbdrXbPonwFwFBuEMrryhFuMJVYU3VlGOkXUccQouo0k5tJJyvZWP/9k=');
     background-size: cover;
     background-position: left;
     text-shadow: 2px 3px 4px rgba(0,0,0,0.3);
 }
 
+.content .header_wrapper_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: left;
+}
+
 .content .header_wrapper h1 {
+    position: relative;
     font-size: 59px;
     font-weight: 300;
     margin-bottom: 100px;
     width: 1032px;
     margin: 0 auto 100px auto;
+    z-index: 1;
 }
 
 .content .header_wrapper h2 {
+    position: relative;
     font-size: 31px;
     font-weight: 300;
     width: 1032px;
     margin: 0 auto 50px auto;
+    z-index: 1;
 }
 
 /* heading end */
@@ -49,6 +66,8 @@ input {
 }
 
 .main_content {
+    position: relative;
+    z-index: 1;
     width: 1032px;
     margin: 0 auto;
 }
@@ -360,11 +379,27 @@ input {
     color: #78797C;
 }
 
+.main_content .ads .ad .car_main_photo {
+    height: 211px;
+    position: relative;
+}
+
 .main_content .ads .ad .car_main_photo img {
+    outline: none;
+    position: absolute;
+    top: 0;
     height: 211px;
     width: 100%;
     display: block;
     object-fit: cover;
+}
+
+.main_content .ads .ad .car_main_photo .bg_img {
+    z-index: 0;
+}
+
+.main_content .ads .ad .car_main_photo .large_img {
+    z-index: 1;
 }
 
 .main_content .ads .ad .car_info {

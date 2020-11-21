@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const path = require('path')
+const lqip = require('lqip');
+
+const file = 'public/img/DRIVECLUB™_20191026215020.jpg';
 
 const port = process.env.PORT || 3000;
 
@@ -11,10 +14,16 @@ app.get('/', (req, res) => {
 });
 
 app.get('/ad', (req, res) => {
+    console.log(123);
     res.sendFile(path.join(__dirname + '/public/ad.html'));
+
+    lqip.base64(file).then(res => {
+        console.log(res);
+    });
 });
 
 app.get('/cars', (req, res) => {
+    console.log(333);
     res.sendFile(path.join(__dirname + '/public/cars.html'));
 });
 
