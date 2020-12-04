@@ -3,7 +3,7 @@ const app = express();
 const path = require('path')
 const lqip = require('lqip');
 
-const file = 'public/img/DRIVECLUB™_20191026215020.jpg';
+const file = 'public/img/DRIVECLUB™_20191024204336.jpg'; 
 
 const port = process.env.PORT || 3000;
 
@@ -29,4 +29,4 @@ app.get('/cars', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Express web app available at localhost: ${port}`);
-});
+}); 

@@ -4,28 +4,28 @@ $(window).on('load', () => {
     // }, 1000);
 });
 
-// setTimeout(() => {
-//     $('.large_img').Lazy({
-//         // your configuration goes here
-//         scrollDirection: 'vertical',
-//         effect: 'fadeIn',
-//         effectTime: 500,
-//         visibleOnly: true,
-//         onError: function(element) {
-//             console.log('error loading ' + element.data('src'));
-//         }
-//     });
-// }, 1000);
+setTimeout(() => {
+    $('.large_img').Lazy({
+        // your configuration goes here
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        effectTime: 500,
+        visibleOnly: true,
+        onError: function(element) {
+            console.log('error loading ' + element.data('src'));
+        }
+    });
+}, 1000);
 
-$('.large_img').Lazy({
-    scrollDirection: 'vertical',
-    effect: 'fadeIn',
-    effectTime: 500,
-    visibleOnly: true,
-    onError: function(element) {
-        console.log('error loading ' + element.data('src'));
-    }
-});
+// $('.large_img').Lazy({
+//     scrollDirection: 'vertical',
+//     effect: 'fadeIn',
+//     effectTime: 500,
+//     visibleOnly: true,
+//     onError: function(element) {
+//         console.log('error loading ' + element.data('src'));
+//     }
+// });
 
 $(window).on('scroll', () => {
     let navbar = $('.navbar')[0];

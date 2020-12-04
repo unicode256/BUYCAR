@@ -18,9 +18,11 @@ input {
 /* heading */
 
 .content .header_wrapper {
+    z-index: 0;
+    position: relative;
     color: #fff;
     padding: 280px 0;
-    background-image: url('img/DRIVECLUB™_20191024204336.jpg');
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k=');
     background-size: cover;
     background-position: left;
     text-align: center;
@@ -28,6 +30,8 @@ input {
 }
 
 .content .header_wrapper h1 {
+    position: relative;
+    z-index: 1;
     text-transform: uppercase;
     font-size: 47px;
     font-weight: 300;
@@ -37,10 +41,22 @@ input {
 }
 
 .content .header_wrapper h2 {
+    position: relative;
+    z-index: 1;
     font-size: 30px;
     font-weight: 300;
     width: 100%;
     margin: 0 auto;
+}
+
+.content .header_wrapper_bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: left;
 }
 
 /* heading end */
@@ -355,4 +371,56 @@ input {
     color: #fff;
     background-color: #FCC12A;
     border: none;
+}
+
+@media screen and (max-width: 1090px) {
+
+    .content .main_content {
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1032px) {
+    .content .header_wrapper h1, .content .header_wrapper h2, .main_content, .content .header_wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content {
+        padding-top: 80px;
+    }
+
+    .content .header_wrapper {
+        width: 100%;
+        padding: 12% 0;
+        background-position: center;
+        text-align: center;
+    }
+
+    .content .header_wrapper h1, .content .header_wrapper h2 {
+        margin: 0 auto;
+        width: 90%;
+        line-height: 1.5em;
+    }
+
+    .content .header_wrapper h1 {
+        font-size: 22px;
+        margin-bottom: 8%;
+        font-weight: 400;
+    }
+
+    .content .header_wrapper h2 {
+        font-size: 16px;
+        margin-bottom: 5%;
+    }
+
+    .content .header_wrapper h2:last-child {
+        margin-bottom: 0;
+    }
+
+    .content .main_content {
+        width: 90%;
+    }
+
 }
