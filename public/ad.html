@@ -4,10 +4,12 @@
         <title>BUYCAR | Объявление</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
         <link href="ad.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
         <script type="text/javascript" src="jquery.lazy.min.js"></script>
     </head>
     <body>
@@ -168,77 +170,15 @@
                                 Просьба перекупщикам (автосалонам) не звонить.
                     </div>
                     <!-- будет переделано на крутую фотогалерею с режимом просмотра -->
-                    <div class="gallery">
-                        <div class="active_photo_wrapper">
-                            <div class="active_photo">
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204336.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204512.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204614.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024211051.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204336.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204512.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024204614.jpg">
-                                </div>
-                                <div class="photo">
-                                    <img data-src="img/DRIVECLUB™_20191024211051.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="photos_selector_wrapper">
-                            <div class="photos_selector">
-                                <div class="selector_photo s1 active">
-                                    <img data-src="img/DRIVECLUB™_20191024204336.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s2 ">
-                                    <img data-src="img/DRIVECLUB™_20191024204512.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s3">
-                                    <img data-src="img/DRIVECLUB™_20191024204614.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s4">
-                                    <img data-src="img/DRIVECLUB™_20191024211051.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s5">
-                                    <img data-src="img/DRIVECLUB™_20191024204336.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s6">
-                                    <img data-src="img/DRIVECLUB™_20191024204512.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s7">
-                                    <img data-src="img/DRIVECLUB™_20191024204614.jpg">
-                                    <div class="line"></div>
-                                </div>
-                                <div class="selector_photo s8">
-                                    <img data-src="img/DRIVECLUB™_20191024211051.jpg">
-                                    <div class="line"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prev_photo">
-
-                        </div>
-                        <div class="next_photo">
-
-                        </div>
+                    <div class="fotorama" data-nav="thumbs" data-thumbwidth="80" data-thumbheight="50" data-loop="true">
+                            <a href="img/DRIVECLUB™_20191024204336.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024204512.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024204614.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024211051.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024204336.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024204512.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024204614.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
+                            <a href="img/DRIVECLUB™_20191024211051.jpg" data-thum="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP4pPBnxP+GVp4K1PTfGPwyfV/Eb6hZy6fr+jaxPp5t7aDe8vy3cl5La3/nLCbe6sJIbUQiWC5sLmOVlPi5jSzGpi6H1fFUaVBRrOrTq0Z1ZVJyhGNGzjUpxjTpyU5Ti4SdVSSUocuv6dw5W4Zw/DuYrMcoxmNzOpiMD9UxdHG0cPQw2Ho1nUx8J0Z4TEVa9bF0vZ08PWVajHCSjOcqWJ51GP2bYftY/Dq0sbO0sfhmkdla2lvb2cdxYJc3CWsMKR26T3DeJw08yxKiyzMA0rhnIBavuaPibnWHo0sP/AGNwtU9hSp0faTy7FudT2UVDnm1mEU5y5eaTUUm27JbHmSyShKUpR5oxk24x9pF8sW7qN3Qu7LS71e5//9k="></a>
                     </div>
                     <div class="options">
                         <div class="option">

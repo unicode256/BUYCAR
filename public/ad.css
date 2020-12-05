@@ -391,6 +391,40 @@ input {
         padding-top: 80px;
     }
 
+    .content * {
+        /* border: 1px solid black; */
+    }
+
+    .content .main_content {
+        padding-top: 50px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .content .main_content .ad_content, .content .main_content .other_info, .content .main_content .other_info .owner_info {
+        width: 100%;
+    }
+
+    .content .main_content .other_info {
+        padding-bottom: 40px;
+    }
+
+    .content .main_content .gallery .active_photo_wrapper .photo {
+        width: 100%;
+    }
+
+    .content .main_content .gallery .active_photo_wrapper .photo img {
+        width: 100%;
+    }
+
+    .content .main_content .ad_content .options {
+        margin-top: 40px;
+    }
+
+    .content .main_content .ad_content .options .option .option_category {
+        margin-right: 15px;
+    }
+
     .content .header_wrapper {
         width: 100%;
         padding: 12% 0;
