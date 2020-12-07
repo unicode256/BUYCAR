@@ -373,6 +373,10 @@ input {
     border: none;
 }
 
+.fotorama__thumb-border {
+    border-color: #FCC12A;
+}
+
 @media screen and (max-width: 1090px) {
 
     .content .main_content {
@@ -421,8 +425,8 @@ input {
         margin-top: 40px;
     }
 
-    .content .main_content .ad_content .options .option .option_category {
-        margin-right: 15px;
+    .content .main_content .ad_content .options .option .option_items {
+        margin-left: 15px;
     }
 
     .content .header_wrapper {

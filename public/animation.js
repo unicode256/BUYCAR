@@ -199,7 +199,6 @@ $('.bg').on('click', () => {
 //     }   
 // }
 
-console.log($("div").is(".slider"));
 if($("div").is(".slider")){
     $(".slider").slider({
         min: 0,
@@ -240,7 +239,6 @@ if($("div").is(".slider")){
         if (input_right == "") {
             input_right = 0;    
         }
-        console.log(input_left);
         $("#slider_from").val(String(input_left).replace(/(\d)(?=(\d{3})+$)/g, '$1 ')); 
         $("#slider_to").val(String(input_right).replace(/(\d)(?=(\d{3})+$)/g, '$1 ')); 
         $(".slider").slider( "values", [ input_left, input_right ]);

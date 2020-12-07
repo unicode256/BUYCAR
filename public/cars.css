@@ -71,11 +71,27 @@ h1, h2, h4, p {
     margin-top: 0;
 }
 
+.main_content .ads .ad .car_main_photo {
+    height: 211px;
+    position: relative;
+}
+
 .main_content .ads .ad .car_main_photo img {
+    outline: none;
+    position: absolute;
+    top: 0;
     height: 211px;
     width: 100%;
     display: block;
     object-fit: cover;
+}
+
+.main_content .ads .ad .car_main_photo .bg_img {
+    z-index: 0;
+}
+
+.main_content .ads .ad .car_main_photo .large_img {
+    z-index: 1;
 }
 
 .main_content .ads .ad .car_info {
