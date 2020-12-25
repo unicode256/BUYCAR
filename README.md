@@ -11,6 +11,7 @@ git clone https://github.com/unicode256/BUYCAR
 ```
 cd BUYCAR
 ```
+```
 npm start
 ```
 After this steps application will be able at `localhost:3000`.
