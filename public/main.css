@@ -266,6 +266,50 @@ input {
     margin-top: 60px;
 }
 
+.main_content .marks .logos img {
+    cursor: pointer;
+}
+
+.main_content .marks .logos div a {
+    position: relative;
+}
+
+.main_content .marks .logos div a .tooltip {
+    position: absolute;
+    bottom: 56px;
+    background-color: rgb(73, 71, 71);
+    color: #fff;
+    padding: 6px 14px;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.main_content .marks .logos img:hover~.tooltip {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
 .main_content .show_more_button, .main_content .show_more_button * {
     /* border: 1px solid black; */
 }
@@ -580,11 +624,16 @@ input {
         position: relative;
     }
 
-    .main_content .marks .logos a .tooltip {
+    .main_content .marks .logos div a .tooltip {
         position: absolute;
         bottom: 0;
         max-width: 150px;
         font-size: 16px;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        background: none;
+        color: #000;
     }
 
     .main_content .marks .logos div:last-child {
