@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" type="text/css" rel="stylesheet">
         <link href="cars.css" type="text/css" rel="stylesheet">
+        <link href="custom_scrollbar.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="jquery.lazy.min.js"></script>
+        <script type="text/javascript" src="jquery.scrollbar.js"></script>
     </head>
     <body>
         <div class="preloader">
@@ -285,6 +287,188 @@
                         </div>
                     </div>
                 </div>
+                <div class="all_search_parameters_wrapper">
+                    <div class="all_search_parameters">
+                        <form>
+                            <h4>Все параметры</h4>
+                            <div class="all_parameters_form scrollbar-macosx">
+                                <div class="parameters_section">
+                                    <h5>Основные</h5>
+                                    <div class="main_parameters">
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Марка</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Модель</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Поколение</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Состояние</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Тип кузова</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="twin_input">
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>Год от</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>по</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Тип двигателя</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="twin_input">
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>Объём от</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>по</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                        </div>
+                                        <div class="twin_input">
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>Пробег от</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>по</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Коробка</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Тип привода</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="twin_input">
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>Цена от</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                            <div class="search_parameter">
+                                                <input type="text">
+                                                <span>по</span>
+                                                <img src="img/arrow_black.png">
+                                            </div>
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Цвет автомобиля</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Цвет салона</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Материал отделки салона</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Местоположение</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Продавец</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="parameters_section">
+                                    <h5>Дополнительно</h5>
+                                    <div class="additional_parameters">
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Безопасность</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Климат и обогрев</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Мультимедиа</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Системы помощи</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Интерьер</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Комфорт</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Оптика и свет</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Тип привода</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                        <div class="search_parameter">
+                                            <input type="text">
+                                            <span>Экстерьер</span>
+                                            <img src="img/arrow_black.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <input type="submit" value="найти">
+                                <span class="drop_parameters">Сбросить</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
                 <div class="search_parameters">
                     <form>
                         <h4>Параметры поиска</h4>
@@ -411,4 +595,9 @@
     </body>
     <script src="jquery-ui.min.js"></script>
     <script src="animation.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.scrollbar-macosx').scrollbar();
+        });
+    </script>
 </html>
