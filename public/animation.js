@@ -63,6 +63,12 @@ $('.all_search_parameters_wrapper').on('click', () => {
     }
 });
 
+$('.parameter_list').on('mousedown', (e) => {
+    console.log(e.target);
+    e.preventDefault();
+    e.stopPropagation();
+});
+
 if($("div").is(".slider")){
     $(".slider").slider({
         min: 0,
