@@ -54,12 +54,14 @@ $('.bg').on('click', () => {
 
 $('.all_parameters').on('click', () => {
     $('.all_search_parameters_wrapper')[0].classList.toggle('all_search_parameters_wrapper_active');
+    $('html')[0].classList.toggle('modal_open');
 });
 
 $('.all_search_parameters_wrapper').on('click', () => {
     console.log(000);
     if(event.target.classList.contains('all_search_parameters_wrapper')){
         $('.all_search_parameters_wrapper')[0].classList.toggle('all_search_parameters_wrapper_active');
+        $('html')[0].classList.toggle('modal_open');
     }
 });
 

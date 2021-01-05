@@ -78,7 +78,7 @@ input {
     margin-top: -100px;
 }
 
-input[type="text"] {
+input[type="text"], input[type="submit"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
@@ -148,7 +148,7 @@ input[type="text"] {
     left: 0;
     font-size: 18px;
     padding: 13px 14px;
-    font-weight: 300;
+    font-weight: 400;
     background-color: rgba(255, 255, 255, 0);
     box-sizing: border-box;
 }

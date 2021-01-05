@@ -24,7 +24,7 @@ app.get('/ad', (req, res) => {
 
 app.get('/cars', (req, res) => {
     console.log(333);
-    res.sendFile(path.join(__dirname + '/public/cars.html'));  
+    res.sendFile(path.join(__dirname + '/public/cars.html'));   
 });
 
 app.listen(port, () => {

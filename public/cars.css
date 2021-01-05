@@ -1,3 +1,9 @@
+html {
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    /* margin-right: calc(-1 * (100vw - 100%)); */
+}
+
 .content {
     background-color: #F6F6F6;
 }
@@ -239,9 +245,17 @@ h1, h2, h4, p {
     margin-left: 50px;
 }
 
+.modal_open {
+    overflow-y: hidden;
+}
+
 .main_content .all_search_parameters_wrapper .all_search_parameters .all_parameters_form {
     height: 100%;
     padding: 0 50px;
+    -webkit-overflow-scrolling: touch;
+
+    overflow: auto;
+
     border-top: 1px solid rgb(230, 230, 230);
     border-bottom: 1px solid rgb(230, 230, 230);
 }
