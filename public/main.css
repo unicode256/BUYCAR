@@ -153,6 +153,12 @@ input[type="text"], input[type="submit"] {
     box-sizing: border-box;
 }
 
+.search_parameters form #desktop_button {
+    cursor: pointer;
+    background: url('img/icons/magnifier.png') no-repeat center center #FCC12A;
+    background-size: 19px;
+}
+
 .parameter_list * {
     /* border: 1px solid black; */
 }
