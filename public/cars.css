@@ -652,5 +652,12 @@ h1, h2, h4, p {
 
     .controls input[type="submit"] {
         width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: none;
+        border: none;
+        border-radius: 0;
     }
 }
