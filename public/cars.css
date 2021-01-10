@@ -471,6 +471,7 @@ h1, h2, h4, p {
     padding-bottom: 13px;
     background-color: #FCC12A;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 .controls input[type="submit"] {
