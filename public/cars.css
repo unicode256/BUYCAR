@@ -643,6 +643,7 @@ h1, h2, h4, p {
     .main_content .all_search_parameters_wrapper .all_search_parameters form .controls {
         flex-direction: column-reverse;
         padding: 20px 35px;
+        height: 124px;
     }
 
     .main_content .all_search_parameters_wrapper .all_search_parameters form .controls .drop_parameters {
