@@ -652,7 +652,5 @@ h1, h2, h4, p {
 
     .controls input[type="submit"] {
         width: 100%;
-        padding-top: 16px;
-        padding-bottom: 15px;
     }
 }
