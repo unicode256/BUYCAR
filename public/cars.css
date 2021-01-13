@@ -573,6 +573,132 @@ h1, h2, h4, p {
     height: 22px;
 }
 
+.search_parameters form .parameter_list_wrapper * {
+    /* border: 1px solid black; */
+    /* z-index: 113; */
+}
+
+.search_parameters form .parameter_list_wrapper {
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    width: 100%;
+    max-height: 275px;
+
+    z-index: 2;
+    top: 48px;
+    left: 0;
+    color: #000;
+    font-weight: 400;
+}
+
+.search_parameters form .scroll-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.search_parameters form .parameter_list_wrapper > div {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    top: 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list {
+    /* height: 300px; */
+    /* border: 1px solid red; */
+    /* width: 100%; */
+    /* overflow: auto; */
+    /* padding-top: 40px; */
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    /* padding: 0 20px; */
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list > div div {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-right: 11px;
+}
+.search_parameters form .parameter_list_wrapper .parameter_list > div label {
+    font-size: 16px;
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list > div img {
+    width: 14px;
+    height: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.search_parameters form > div input[type="text"]:focus ~ .parameter_list_wrapper {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.search_parameters form > div input:focus ~ span {
+    color: #fff;
+}
+
+.search_parameters form > div input:focus ~ img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list input[type="checkbox"]:checked ~ div {
+    background-color: #FCC12A;
+}
+
+.search_parameters form .parameter_list_wrapper .parameter_list input[type="checkbox"]:checked ~ div img{
+    opacity: 1;
+    visibility: visible;
+}
+
 @media screen and (max-width: 1260px) {
 
     .content .main_content {
