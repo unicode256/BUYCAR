@@ -27,6 +27,11 @@ app.get('/cars', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/cars.html'));   
 });
 
+app.get('/ads', (req, res) => {
+    console.log(333);
+    res.sendFile(path.join(__dirname + '/public/ads.html'));   
+});
+
 app.listen(port, () => {
     console.log(`Express web app available at localhost: ${port}`);
 });  
