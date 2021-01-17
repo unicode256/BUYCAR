@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BUYCAR | Избранное</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="profile_style.css" type="text/css" rel="stylesheet">
+        <link href="favorites.css" type="text/css" rel="stylesheet">
+        <link href="custom_scrollbar.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery.lazy.min.js"></script>
+        <script type="text/javascript" src="jquery.scrollbar.js"></script>
+    </head>
+    <body>
+        <div class="preloader">
+            <div>
+                <div class="spinner"></div>
+                <span>Загрузка...</span>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="menu_toggle">
+                <div class="sidebar_switcher">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <img class="logo" src="img/white_logo.png">
+            <ul>
+                <li class="selection">
+                    <a href="/cars">авто</a>
+                    <ul class="submenu auto_submenu">
+                        <div>
+                            <li>Все</li>
+                            <li>Новые</li>
+                            <li>С пробегом</li>
+                        </div>
+                    </ul>
+                    <img src="img/arrow_white.png">
+                </li>
+                <li class="selection"><a href="#">мото</a>
+                    <ul class="submenu">
+                        <li>Мотоциклы</li>
+                        <li>Скутеры</li>
+                        <li>Мотовездеходы</li>
+                        <li>Снегоходы</li>
+                    </ul>
+                    <img src="img/arrow_white.png">
+                </li>
+                <li class="selection"><a href="#">запчасти</a>
+                    <ul class="submenu">
+                        <li>Кузовные запчасти</li>
+                        <li>Электрика и свет</li>
+                        <li>Двигатель и система зажигания<br /></li>
+                        <li>Шины и диски</li>
+                        <li>Аккумуляторы</li>
+                    </ul>
+                    <img src="img/arrow_white.png">
+                </li>
+                <li><a href="#">автоновости</a></li>
+                <a href="#" class="sell_button">продать</a>
+                <li class="profile_select">
+                    <a href="#">Глеб</a>
+                    <span class="navbar_avatar"></span>
+                    <img src="img/arrow_white.png">
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar_nav">
+            <div class="account_menu">
+                <div class="account_info">
+                    <img src="img/Аннотация 2020-07-23 152126.png">
+                    <div>
+                        <div>
+                            <p>Глеб</p>
+                            <p>andreev.gs12@yandex.by</p>
+                        </div>
+                        <img src="img/arrow_white.png">
+                    </div>
+                </div>
+                <div class="account_menu_items">
+                    <ul>
+                        <li><a>мои объявления</a></li>
+                        <li><a>мои сообщения</a></li>
+                        <li><a>избранное</a></li>
+                        <li><a>уведомления</a></li>
+                        <li><a>настройки</a></li>
+                        <li><a>выход</a></li>
+                        <a>продать</a>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <ul>
+                <li class="menu_item">
+                    <a>авто</a>
+                    <div class="arrow">
+                        <img src="img/arrow_black.png">
+                        <img src="img/arrow_white.png">
+                    </div>
+                </li>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li><a>Все</a></li>
+                        <li><a>Новые</a></li>
+                        <li><a>С пробегом</a></li>
+                    </ul>
+                </div>
+                <li class="menu_item">
+                    <a>мото</a>
+                    <div class="arrow">
+                        <img src="img/arrow_black.png">
+                        <img src="img/arrow_white.png">
+                    </div>
+                </li>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li><a>Мотоциклы</a></li>
+                        <li><a>Скутеры</a></li>
+                        <li><a>Вездеходы</a></li>
+                    </ul>
+                </div>
+                <li class="menu_item">
+                    <a>запчасти</a>
+                    <div class="arrow">
+                        <img src="img/arrow_black.png">
+                        <img src="img/arrow_white.png">
+                    </div>
+                </li>
+                <div class="sidebar_submenu">
+                    <ul>
+                        <li><a>Кузовные запчасти</a></li>
+                        <li><a>Электрика и свет</a></li>
+                        <li><a id="two_lines_item">Двигатель и система зажигания</a></li>
+                        <li><a>Шины и диски</a></li>
+                        <li><a>Аккумуляторы</a></li>
+                    </ul>
+                </div>
+                <li><a>автоновости</a></li>
+            </ul>
+        </div>
+        <div class="bg"></div>
+
+        <div class="content">
+            <div class="leftside_menu">
+                <div>
+                    <a href="/ads">
+                        <span>мои объявления</span>
+                    </a>
+                    <a>
+                        <span>мои сообщения</span>
+                    </a>
+                    <a class="active">
+                        <span>избранное</span>
+                    </a>
+                    <a href="/notifications">
+                        <span>уведомления</span>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <span>настройки</span>
+                    </a>
+                    <a id="exit">
+                        <span>выйти</span>
+                    </a>
+                </div>
+            </div>
+            <div class="main_content scrollbar-macosx">
+                <h4>2 объявления</h4>
+                <div class="ads">
+                    <div class="ad">
+                        <div class="car_main_photo">
+                            <img class="bg_img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwY+MH7ZnjL4G/Efx18P/G3we+DHxP01/FGvy6AL+38TaVeaWLy9guIJLzxD4av/DGv6zPNZyQQ67HrF3qWn6+0+pw6lZT2d5PDcfZ5Hm3DWNwlLC43helVqfVryxdHH4zDYidWnB03ObVapCftXNTleCVOUX7OCjNpeXmWAzXA4iqqWb1IKM1ei6NKtRdKT54xSnTjOHs+W0VBr7N5PlV/o3w7+0p4b1rw/oWsah4E0+zv9W0bTNTvbSw0XSJrG1u7+ygurm2spri4juJbSCaV4raWeOOaSFUaVFcso+YxEaTr1nTjJU3WqOCn7Kc1DnlyqcvZe9JRspS6u76nRBSUIJvVQinaVVK6SvZKorK+ysrI/wD/2Q==">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwY+MH7ZnjL4G/Efx18P/G3we+DHxP01/FGvy6AL+38TaVeaWLy9guIJLzxD4av/DGv6zPNZyQQ67HrF3qWn6+0+pw6lZT2d5PDcfZ5Hm3DWNwlLC43helVqfVryxdHH4zDYidWnB03ObVapCftXNTleCVOUX7OCjNpeXmWAzXA4iqqWb1IKM1ei6NKtRdKT54xSnTjOHs+W0VBr7N5PlV/o3w7+0p4b1rw/oWsah4E0+zv9W0bTNTvbSw0XSJrG1u7+ygurm2spri4juJbSCaV4raWeOOaSFUaVFcso+YxEaTr1nTjJU3WqOCn7Kc1DnlyqcvZe9JRspS6u76nRBSUIJvVQinaVVK6SvZKorK+ysrI/wD/2Q==" class="large_img" data-src="img/DRIVECLUB™_20191026215020.jpg">
+                            <span style="display: none" class="sticker">топ</span>
+                        </div>
+                        <div class="car_info">
+                            <h4><a href="/ad">bmw m5</a></h4>
+                            <h4>80 000 usd</h4>
+                            <span>Год: 2014</span>
+                            <span>Привод: задний</span>
+                            <span>Цвет: синий</span>
+                            <div>
+                                <img src="img/icons/body.png">
+                                <span>Седан</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/engine.png">
+                                <span>4.4 л / 560 л.с. / Бензин</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/gear.png">
+                                <span>Робот</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/mileage.png">
+                                <span>90 000 км</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/place.png">
+                                <span>Киев, Украина</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ad">
+                        <div class="car_main_photo">
+                            <img class="bg_img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwY+MH7ZnjL4G/Efx18P/G3we+DHxP01/FGvy6AL+38TaVeaWLy9guIJLzxD4av/DGv6zPNZyQQ67HrF3qWn6+0+pw6lZT2d5PDcfZ5Hm3DWNwlLC43helVqfVryxdHH4zDYidWnB03ObVapCftXNTleCVOUX7OCjNpeXmWAzXA4iqqWb1IKM1ei6NKtRdKT54xSnTjOHs+W0VBr7N5PlV/o3w7+0p4b1rw/oWsah4E0+zv9W0bTNTvbSw0XSJrG1u7+ygurm2spri4juJbSCaV4raWeOOaSFUaVFcso+YxEaTr1nTjJU3WqOCn7Kc1DnlyqcvZe9JRspS6u76nRBSUIJvVQinaVVK6SvZKorK+ysrI/wD/2Q==">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAYACgMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APwY+MH7ZnjL4G/Efx18P/G3we+DHxP01/FGvy6AL+38TaVeaWLy9guIJLzxD4av/DGv6zPNZyQQ67HrF3qWn6+0+pw6lZT2d5PDcfZ5Hm3DWNwlLC43helVqfVryxdHH4zDYidWnB03ObVapCftXNTleCVOUX7OCjNpeXmWAzXA4iqqWb1IKM1ei6NKtRdKT54xSnTjOHs+W0VBr7N5PlV/o3w7+0p4b1rw/oWsah4E0+zv9W0bTNTvbSw0XSJrG1u7+ygurm2spri4juJbSCaV4raWeOOaSFUaVFcso+YxEaTr1nTjJU3WqOCn7Kc1DnlyqcvZe9JRspS6u76nRBSUIJvVQinaVVK6SvZKorK+ysrI/wD/2Q==" class="large_img" data-src="img/DRIVECLUB™_20191026215020.jpg">
+                            <span style="display: none" class="sticker">топ</span>
+                        </div>
+                        <div class="car_info">
+                            <h4><a href="/ad">bmw m5</a></h4>
+                            <h4>80 000 usd</h4>
+                            <span>Год: 2014</span>
+                            <span>Привод: задний</span>
+                            <span>Цвет: синий</span>
+                            <div>
+                                <img src="img/icons/body.png">
+                                <span>Седан</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/engine.png">
+                                <span>4.4 л / 560 л.с. / Бензин</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/gear.png">
+                                <span>Робот</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/mileage.png">
+                                <span>90 000 км</span>
+                            </div>
+                            <div>
+                                <img src="img/icons/place.png">
+                                <span>Киев, Украина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </body>
+    <script src="animation.js"></script>
+    <script src="profile_animation.js"></script>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery('.scrollbar-macosx').scrollbar();
+        });
+    </script>
+</html>

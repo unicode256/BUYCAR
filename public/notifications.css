@@ -1,0 +1,107 @@
+.main_content .notifications, .main_content .notifications * {
+    /* border: 1px solid black; */
+}
+
+.main_content > h4 {
+    color: #828282;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 50px 0 40px 85px;
+}
+
+.main_content .notifications {
+    padding: 0px 85px;
+}
+
+.main_content .notifications .notification:first-child {
+    border-top: 1px solid rgb(227, 227, 227);
+}
+
+.main_content .notifications .notification {
+    display: flex;
+    color: #828282;
+    padding: 14px 0;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.main_content .notifications .notification .heading span:last-child {
+    transition: .2s;
+}
+
+.main_content .notifications .notification:hover .heading span:last-child {
+    color: #FCC12A;
+    transition: .2s;
+}
+
+.main_content .notifications .notification .miniature {
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5%;
+}
+
+.main_content .notifications .notification.success .miniature{
+    background-color: #8EE961;
+}
+
+.main_content .notifications .notification.warning .miniature {
+    background-color: #FCC12A;
+}
+
+.main_content .notifications .notification.block .miniature {
+    background-color: #FF5E5E;
+}
+
+.main_content .notifications .notification.success .miniature img {
+    width: 32px;
+}
+
+.main_content .notifications .notification.warning .miniature img {
+    width: 5px;
+}
+
+.main_content .notifications .notification.block .miniature img {
+    width: 31px;
+    transform: rotate(45deg);
+}
+
+.main_content .notifications .notification .info {
+    width: calc(98.5% - 70px);
+    /* flex-basis: 100%; */
+}
+
+.main_content .notifications .notification .info .heading .label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FCC12A;
+    margin-right: 7px;
+    display: none;
+}
+
+.main_content .notifications .notification .info .heading .label.new {
+    display: block;
+}
+
+.main_content .notifications .notification .info .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.main_content .notifications .notification .info .heading div {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.main_content .notifications .notification .info .notification_content {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

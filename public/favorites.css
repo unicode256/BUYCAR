@@ -1,0 +1,110 @@
+.main_content > h4 {
+    color: #828282;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    padding: 50px 0 40px 85px;
+}
+
+.main_content .ads {
+    width: 681px;
+    margin-left: 85px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.main_content .ads .ad:first-child, .main_content .ads .ad:nth-child(2) {
+    margin-top: 0;
+}
+
+.main_content .ads .ad {
+    box-sizing: border-box;
+    width: 330px;
+    background-color: #fff;
+    color: #78797C;
+    margin-top: 30px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.1);
+}
+
+.main_content .ads .ad .car_main_photo {
+    height: 211px;
+    position: relative;
+}
+
+.main_content .ads .ad .car_main_photo .bg_img {
+    z-index: 0;
+}
+
+.main_content .ads .ad .car_main_photo img {
+    outline: none;
+    position: absolute;
+    top: 0;
+    height: 211px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.main_content .ads .ad .car_main_photo .large_img {
+    z-index: 1;
+}
+
+.main_content .ads .ad .car_info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px 25px 25px;
+}
+
+.main_content .ads .ad .car_info h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 6px;
+}
+
+.main_content .ads .ad .car_info h4:nth-child(2) {
+    color: #FCC12A;
+    margin-bottom: 17px;
+}
+
+.main_content .ads .ad .car_info > span {
+    margin-bottom: 6px;
+}
+
+.main_content .ads .ad .car_info > span:nth-child(5) {
+    margin-bottom: 17px;
+}
+
+.main_content .ads .ad .car_info > div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 17px;
+}
+
+.main_content .ads .ad .car_info > div:last-child {
+    margin-bottom: 0;
+}
+
+.main_content .ads .ad .car_info h4 a {
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.main_content .ads .ad .car_info h4 a:hover {
+    color: #FCC12A;
+    transition: color 0.2s;
+}
+
+.main_content .ads .ad .car_info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
