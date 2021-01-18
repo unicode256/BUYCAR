@@ -1,0 +1,242 @@
+/* tab controls and tabs styles */
+
+.main_content .tabs_controls * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_content .tabs_controls ul li a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: #828282;
+    padding-bottom: 15px;
+}
+
+.main_content .tabs_controls {
+    padding-top: 50px;
+    position: relative;
+}
+
+.main_content .tabs_controls ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.main_content .tabs_controls ul li {
+    margin-right: 35px;
+    padding-bottom: 15px;
+}
+
+.main_content .tabs_controls ul li:last-child {
+    margin-right: 0;
+}
+
+.main_content .tabs_controls .line {
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    background: #FCC12A;
+}
+
+.main_content .tabs_controls ul li:hover a {
+    color: #FCC12A;
+}
+
+.main_content .tabs_controls ul li.active a {
+    color: #FCC12A;
+}
+
+.main_content .tabs .first_tab {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: rgba(252, 193, 42, 0.12); */
+    display: none;
+}
+
+.main_content .tabs .second_tab {
+    width: 100%;
+    /* height: 100px; */
+    /* background-color: rgba(252, 84, 42, 0.12); */
+    display: none;
+}
+
+.main_content .tabs * {
+    /* border: 1px solid black; */
+}
+
+.main_content .tab_1_active ~ .tabs .first_tab {
+    display: block;
+}
+
+.main_content .tab_2_active ~ .tabs .second_tab {
+    display: block;
+}
+
+.main_content .tabs {
+    width: 100%;
+}
+
+.main_content .tabs .tab {
+    padding: 0 85px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+}
+
+.main_content .tabs .tab h4 {
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 60px 0 40px 0;
+}
+
+.main_content .tabs .tab > h4:first-child {
+    text-transform: uppercase;
+}
+
+/* tab controls and tabs styles end */
+
+/* dialogs styles */
+
+.main_content .tabs * {
+    /* border: 1px solid black; */
+}
+
+.main_content .dialog:nth-child(2) {
+    border-top: 1px solid rgb(227, 227, 227);
+}
+
+.main_content .tabs .tab .dialog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 0;
+    box-sizing: border-box;
+    color: #828282;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+.main_content .tabs .tab .dialog * {
+    margin: 0;
+    padding: 0;
+}
+
+.main_content .tabs .tab .dialog .car_main_photo {
+    height: 90px;
+    position: relative;
+    width: 146px;
+}
+
+.main_content .tabs .tab .dialog .car_main_photo img {
+    height: 90px;
+    width: 146px;
+    position: absolute;
+    display: block;
+    top: 0;
+    object-fit: cover;
+}
+
+.main_content .tabs .tab .ad .stat_info .car_main_photo .bg_img {
+    z-index: 0;
+}
+
+.main_content .tabs .tab .ad .stat_info .car_main_photo .large_img {
+    z-index: 1;
+}
+
+.main_content .tabs .tab .dialog .dialog_info {
+    width: 100%;
+    padding-left: 5%;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading div span {
+    width: 60px;
+    text-align: right;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    width: 300px;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading h3.cost {
+    color: #FCC12A;
+    /* margin-right: 100px; */
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading h3.sales {
+    color: #8EE961;
+    text-transform: uppercase;
+    /* margin-right: 100px; */
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading span {
+    font-size: 16px;
+}
+
+.main_content .tabs .tab .dialog .dialog_info h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.main_content .tabs .tab .dialog .dialog_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_content .tabs .tab .dialog .dialog_info div {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .message div {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .message .counter {
+    background-color: #FCC12A;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 10px;
+    /* padding-top: 5px; */
+    border-radius: 50%;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .message .checkmark {
+    height: 10px;
+}
+
+.main_content .tabs .tab .dialog:hover .heading h3, .main_content .tabs .tab .dialog:hover .heading span {
+    color: #FCC12A;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading h3 {
+    transition: .2s;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .heading div span:last-child {
+    transition: .2s;
+}
+
+.main_content .tabs .tab .dialog .dialog_info .message .author {
+    color: #FCC12A;
+    margin-right: 8px;
+}

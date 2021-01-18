@@ -40,7 +40,12 @@ app.get('/favorites', (req, res) => {
 app.get('/notifications', (req, res) => {
     console.log(333);
     res.sendFile(path.join(__dirname + '/public/notifications.html'));   
-}); 
+});
+
+app.get('/dialogs', (req, res) => {
+    console.log(333);
+    res.sendFile(path.join(__dirname + '/public/dialogs.html'));   
+});
 
 app.listen(port, () => {
     console.log(`Express web app available at localhost: ${port}`);

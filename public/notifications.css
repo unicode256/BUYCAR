@@ -13,6 +13,7 @@
 
 .main_content .notifications {
     padding: 0px 85px;
+    padding-bottom: 30px;
 }
 
 .main_content .notifications .notification:first-child {
