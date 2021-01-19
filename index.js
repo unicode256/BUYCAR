@@ -47,6 +47,11 @@ app.get('/dialogs', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/dialogs.html'));   
 });
 
+app.get('/settings', (req, res) => {
+    console.log(333);
+    res.sendFile(path.join(__dirname + '/public/settings.html'));   
+});
+
 app.listen(port, () => {
     console.log(`Express web app available at localhost: ${port}`);
 });  
