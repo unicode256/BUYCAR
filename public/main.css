@@ -200,6 +200,13 @@ input[type="text"], input[type="submit"] {
     padding: 16px 20px;
 }
 
+.search_parameters form .parameter_list > div img {
+    width: 14px;
+    height: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
 .search_parameters form .parameter_list > div div {
     position: relative;
     width: 23px;
@@ -210,16 +217,21 @@ input[type="text"], input[type="submit"] {
     background-color: #F2F2F2;
     margin-right: 11px;
 }
+
+.search_parameters form .car_mark_parameter .parameter_list > div div {
+    background-color: #fff;
+}
+
 .search_parameters form .parameter_list > div label {
     font-size: 16px;
 }
 
-.search_parameters form .parameter_list > div img {
-    width: 14px;
-    height: 10px;
-    visibility: hidden;
-    opacity: 0;
+.search_parameters form .car_mark_parameter .parameter_list > div img {
+    width: 20px;
+    height: auto;
 }
+
+
 
 .search_parameters form > div input[type="text"]:focus ~ .parameter_list {
     opacity: 1;
@@ -240,7 +252,7 @@ input[type="text"], input[type="submit"] {
     transition: all ease-in-out 0.2s;
 }
 
-.search_parameters form .parameter_list input[type="checkbox"] {
+.search_parameters form .parameter_list input[type="checkbox"], .search_parameters form .parameter_list input[type="radio"] {
     cursor: pointer;
     position: absolute;
     top: 0;
@@ -255,7 +267,7 @@ input[type="text"], input[type="submit"] {
     background-color: #FCC12A;
 }
 
-.search_parameters form .parameter_list input[type="checkbox"]:checked ~ div img{
+.search_parameters form .parameter_list input[type="checkbox"]:checked ~ div img, .search_parameters form .parameter_list input[type="radio"]:checked ~ div img {
     opacity: 1;
     visibility: visible;
 }
