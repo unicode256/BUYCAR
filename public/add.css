@@ -1,0 +1,264 @@
+.content {
+    background-color: #fff;
+}
+
+.content, .content * {
+    border: 1px solid black;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(73, 71, 71);
+}
+
+.main_content {
+    width: 1032px;
+    margin: 0 auto;
+    padding-top: 140px;
+}
+
+.main_content > h1 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.main_content > h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.main_content .files {
+    background-color: #F6F6F6;
+    padding: 40px 30px 56px 30px;
+    margin-bottom: 60px;
+}
+
+.main_content .files h2 {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FCC12A;
+    margin-bottom: 30px;
+}
+
+.main_content .files span {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* parameters styles */
+
+.parameters form h4 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 55px;
+}
+
+.parameter {
+    box-sizing: border-box;
+    margin-bottom: 28px;
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.parameter:nth-child(4) {
+    margin-bottom: 56px;
+}
+
+.parameter img {
+    width: 14px;
+    height: 7px;
+    transform: rotate(0deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.parameter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #fff;
+    position: relative;
+}
+
+.parameter input {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 15px 0;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+}
+
+.parameter input:focus + span {
+    color: #fff;
+}
+
+.parameter input:focus ~ img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.twin_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.twin_input .parameter {
+    width: 112px;
+}
+
+.search_parameters form input[type="submit"], .controls input[type="submit"] {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    background-color: #FCC12A;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.controls input[type="submit"] {
+    width: 260px;
+}
+
+.main_content form .parameter_list_wrapper {
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.15);
+    position: absolute;
+    width: 100%;
+    max-height: 275px;
+
+    z-index: 2;
+    top: 48px;
+    left: 0;
+    color: #000;
+    font-weight: 400;
+}
+
+.main_content form .scroll-wrapper {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    transform: translateY(20px);
+
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.main_content form .parameter_list_wrapper > div {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    top: 0;
+}
+
+.main_content form .parameter_list_wrapper .parameter_list > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    /* padding: 0 20px; */
+}
+
+.main_content form .parameter_list_wrapper .parameter_list > div div {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    margin-right: 11px;
+}
+.main_content form .parameter_list_wrapper .parameter_list > div label {
+    font-size: 16px;
+}
+
+.main_content form .parameter_list_wrapper .parameter_list > div img {
+    width: 14px;
+    height: 10px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.main_content form > div input[type="text"]:focus ~ .parameter_list_wrapper {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    visibility: visible;
+}
+
+.main_content form > div input:focus ~ span {
+    color: #fff;
+}
+
+.main_content form > div input:focus ~ img {
+    transform: rotate(180deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.main_content form .parameter_list_wrapper .parameter_list input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+}
+
+.main_content form .parameter_list_wrapper .parameter_list input[type="checkbox"]:checked ~ div {
+    background-color: #FCC12A;
+}
+
+.main_content form .parameter_list_wrapper .parameter_list input[type="checkbox"]:checked ~ div img{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* parameters styles end */
