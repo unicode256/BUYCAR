@@ -1,5 +1,5 @@
-# BUYCAR
-### The app is available at the link below
+# BUYCAR Demo
+### The full app is available at the link below
 [test.buycar.by](http://test.buycar.by)
 
 ### Installing and deploying
@@ -15,3 +15,4 @@ cd BUYCAR
 npm start
 ```
 After this steps application will be able at `localhost:3000`.
+Full source code is located in private repository.
