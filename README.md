@@ -1,6 +1,6 @@
 # BUYCAR Demo
 ### The full app is available at the link below
-[test.buycar.by](http://test.buycar.by)
+[buycar.by](https://buycar.by)
 
 ### Installing and deploying
 If you want to deploy this app on `localhost`, first of all you need to install Node JS.
